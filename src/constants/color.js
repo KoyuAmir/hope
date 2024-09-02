@@ -2,3 +2,5 @@
 
 export const orange = "#1e1641";
 export const graycolor = "rgba(247, 247, 247, 1)";
+export const lightBlue = "#2694ab";
+export const matBlack = "#1c1c1c"

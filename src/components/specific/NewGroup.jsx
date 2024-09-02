@@ -54,7 +54,7 @@ const NewGroup = () => {
             <UserItem user={i} key={i._id} handler={selectMemberHandler} isAdded={selectedMembers.includes(i._id)}/>
           ))}
         </Stack>
-        <Stack direction={"row"} justifyContent={"space-evenly"}>
+        <Stack direction={"row"} alignItems={"center"} justifyContent={"space-evenly"}>
           <Button variant="text" color="error" size="large">
             Cancel
           </Button>
