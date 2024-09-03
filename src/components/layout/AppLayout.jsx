@@ -27,25 +27,13 @@ const AppLayout = () => (WrappedComponent) => {
             item
             sm={4}
             md={3}
-            sx={{ display: { xs: "none", sm: "block" } }}
+            sx={{ display: { xs: "none", sm: "block", color: 'primary.main' } }}
             height={"100%"}
           >
             <ChatList
               chats={sampleChats}
               chatId={chatId}
               handleDeleteChat={handleDeleteChat}
-
-              // newMessagesAlert={[
-              //   {
-              //     chatId,
-              //     count: 4,
-              //   },
-              // ]}
-
-              // onlineUsers={["1", "2"]}
-
-
-
             />
           </Grid>
           <Grid item xs={12} sm={8} md={5} lg={6} height={"100%"}>

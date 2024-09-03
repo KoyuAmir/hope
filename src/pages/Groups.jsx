@@ -204,7 +204,6 @@ const Groups = () => {
       <Grid
         item
         sm={4}
-        bgcolor={"bisque"}
         sx={{
           display: {
             xs: "none",
@@ -306,7 +305,12 @@ const Groups = () => {
 };
 
 const GroupsList = ({ w = "100%", myGroups = [], chatId }) => (
-  <Stack width={w}>
+  <Stack width={w} sx={{
+    bgcolor:"bisque",
+    height: "100vh",
+    overflow: "auto",
+  }}
+  >
     {myGroups.length > 0 ? (
       myGroups.map((group) => (
         <GroupListItem group={group} chatId={chatId} key={group._id} />
@@ -329,7 +333,7 @@ const GroupListItem = ({ group }) => {
         if (chatId === _id) e.preventDefault();
       }}
     >
-      <Stack direction={"row"} spacing={"1rem"} alignItems={"center"}>
+      <Stack direction={"row"} spacing={"1rem"} alignItems={"center"} >
         <Avatarcard avatar={avatar} />
         <Typography>{name}</Typography>
       </Stack>
